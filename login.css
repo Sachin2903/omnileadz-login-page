@@ -1,0 +1,123 @@
+/* login.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url(BG1.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.form-body {
+  padding: 48px 80px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+  background-color: #fff;
+  background-image: url(bg2.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+span {
+  display: block;
+  text-align: left;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  font-weight: bold;
+}
+
+.input-box {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 15px 35px 15px 15px; /* Adjusted padding for center alignment */
+  border: none; /* Remove all borders */
+  border-radius: 0; /* No border radius */
+  font-size: 12px;
+  box-sizing: border-box;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); /* Shadow on the bottom */
+  background-color: transparent; /* No background color */
+  border-radius: 0 0 20px 20px; /* Rounded corners on the bottom only */
+}
+
+.input-box i {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #888;
+}
+
+input:focus {
+  outline: none;
+}
+
+a {
+  display: block;
+  text-align: right;
+  margin-bottom: 20px;
+  color: #000000;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.btn {
+  background-color: transparent; /* No background color */
+  color: #ccc; /* Text color */
+  border: none; /* Remove all borders */
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1); /* Shadow on the bottom */
+  border-radius: 20px 20px 20px 20px; /* Rounded corners on the bottom only */
+}
+
+.btn:hover {
+  background-color: rgba(
+    0,
+    123,
+    255,
+    0.1
+  ); /* Light background color on hover */
+}
+
+.btn i {
+  position: fixed;
+  margin-right: 5px;
+  margin-left: -200px; /* Adjust the icon position to be on the left side */
+  color: #888;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+  .form-body {
+    padding: 48px 30px;
+    width: 100%;
+    background-size: cover;
+  }
+  body {
+    background-size: cover;
+  }
+}
