@@ -21,7 +21,7 @@ body {
   gap:10px;
 
 }
-@media (max-width:450px) {
+@media (max-width:390px) {
   .logo-section{
     flex-direction: column;
     gap:20px;
