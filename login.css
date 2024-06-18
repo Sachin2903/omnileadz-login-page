@@ -12,7 +12,39 @@ body {
   align-items: center;
   height: 100vh;
 }
+.logo-section{
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+  gap:10px;
 
+}
+@media (max-width:450px) {
+  .logo-section{
+    flex-direction: column;
+    gap:20px;
+  }
+  .seperator{
+    display: none;
+  }
+}
+.logo-section h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-logo-1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:2px;
+  font-family: sans-serif;
+}
+.form-logo-2{
+  width:90px;
+}
 .container {
   width: 100%;
   height: 100%;
@@ -87,10 +119,7 @@ body {
   width:150px;
   z-index: 9;
 }
-h1 {
-  font-size: 24px;
-  margin-bottom: 30px;
-}
+
 
 span {
   display: block;
@@ -107,15 +136,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 }
-.form-logo-1{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap:6px
-}
-.form-logo-2{
-  width:90px
-}
+
 .input-box input {
   width: 100%;
   padding: 15px 20px;
@@ -180,6 +201,14 @@ z-index: 999;
 
 .btn p{
    width:80%;
+}
+.btn:hover{
+background-color: black;
+color: white;
+transition: all 0.1s ease-in-out;
+}
+.btn:active{
+transform: scale(0.99);
 }
 
 
